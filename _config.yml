@@ -22,7 +22,7 @@ repository               : "sachdevakunal/sachdevakunal.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/assets/images/Untitled.png"
+  avatar           : "/images/Untitled.png"
   name             : "Kunal Sachdeva"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
