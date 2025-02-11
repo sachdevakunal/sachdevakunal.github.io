@@ -13,7 +13,7 @@ title                    : "Kunal Sachdeva"
 title_separator          : "-"
 name                     : &name "Kunal Sachdeva"
 description              : &description "Kunal's Portfolio"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://sachdevakunal.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
