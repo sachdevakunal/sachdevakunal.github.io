@@ -1,15 +1,16 @@
 ---
-title: "Accelerating CFD Simulations with DeepONet"
-date: 2024-02-10
-excerpt: "Using DeepONet to accelerate reaction integration in PeleLMeX."
-description: "This project integrates DeepONet into PeleLMeX to reduce computational cost while maintaining accuracy."
-image: /assets/images/deeponet.png
-link: /projects/deeponet/
+title: "Development and Application of an Incompressible Navier-Stokes Solver"
+date: 2024-02-12
+excerpt: "Building a solver to simulate flow over a square geometry using the Incompressible Navier-Stokes equations."
+description: "Implemented a CFD solver for incompressible flows and validated results for flow over a square obstacle."
+image: /assets/images/incompressible-ns.png
+link: /projects/incompressible-ns/
 ---
 
-Using DeepONet to accelerate reaction integration in PeleLMeX for high-fidelity reactive CFD simulations.
+# Development and Application of an Incompressible Navier-Stokes Solver
 
-🔹 **Technologies:** Python, TensorFlow, PeleLMeX, HPC  
-🔹 **Results:** 4-5x speedup in reaction integration  
-
-🔗 **[Read More](/projects/deeponet/)**
+## **Objectives**
+1. **Develop an incompressible Navier-Stokes solver** using a fractional-step method and finite difference discretization to simulate viscous fluid flows.  
+2. **Validate the solver** by simulating lid-driven cavity flow and comparing velocity profiles with benchmark data to assess accuracy.  
+3. **Apply the solver to simulate flow over a square obstacle** at different Reynolds numbers to analyze wake formation, vortex shedding, and flow separation.  
+4. **Evaluate the solver’s performance and numerical stability** by testing different boundary conditions, time-stepping methods, and solver configurations.  
