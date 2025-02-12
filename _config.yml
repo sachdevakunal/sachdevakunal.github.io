@@ -225,6 +225,10 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  projects:  # ← Add this section
+    output: true
+    permalink: /projects/:path/
+
 
 
 # These settings control how pages and collections are included in the site
