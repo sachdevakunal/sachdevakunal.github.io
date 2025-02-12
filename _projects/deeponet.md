@@ -1,6 +1,7 @@
 ---
 permalink: /projects/deeponet/
 title: "Accelerating CFD Simulations with DeepONet"
+layout: single
 author_profile: true
 ---
 
