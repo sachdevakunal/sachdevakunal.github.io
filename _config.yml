@@ -293,8 +293,8 @@ defaults:
       author_profile: true
       share: true
 
-      #_projects
-    - scope:
+  #_projects
+  - scope:
       path: ""
       type: projects  # ← Add this section for project pages
     values:
