@@ -7,7 +7,6 @@ entries_layout: grid
 classes: wide
 ---
 
-# Projects
 
 Here are some of my research and engineering projects:
 
