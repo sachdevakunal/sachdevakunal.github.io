@@ -58,7 +58,7 @@ The computational domain is a **$ 1 \times 1 $ square** discretized into a **$ 1
 
 A schematic representation of the staggered grid is shown below:
 
-![Grid Discretization](images/staggered_grid.png)  
+![Grid Discretization](../images/staggered_grid.png)  
 
 ---
 
