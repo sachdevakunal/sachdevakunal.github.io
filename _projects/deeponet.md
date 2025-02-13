@@ -61,3 +61,15 @@ The computational domain is a **$ 1 \times 1 $ square** discretized into a **$ 1
 A schematic representation of the staggered grid is shown below:
 
 ![Grid Discretization](../assets/images/grid_placeholder.png)  
+
+---
+
+## **Solution Procedure**  
+The solution begins with the creation of a **pointer matrix system**, which maps 2D velocity and pressure locations to a **1D index** for efficient data handling. This matrix is used to construct key operators, including **divergence, Laplacian, gradient, advection, and boundary condition vectors**.  
+
+The simulation starts with **zero initial conditions** for velocity and pressure. The **fractional-step algorithm** is executed iteratively, with each time step consisting of:  
+1. **Velocity prediction step** using a **conjugate gradient solver**.  
+2. **Pressure correction step** to enforce incompressibility.  
+3. **Velocity update step** via matrix operations.  
+
+A **small time step** is chosen to maintain numerical stability. The solver is validated against **Ghia et al.'s benchmark results** at **Re = 100**, with a **conjugate gradient solver tolerance of $10^{-10}$** to ensure accuracy in solving the linear systems.  
