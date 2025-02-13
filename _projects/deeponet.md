@@ -24,7 +24,7 @@ $$
 \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla) \mathbf{u} = -\frac{1}{\rho} \nabla p + \nu \nabla^2 \mathbf{u} + \mathbf{f}, \quad \nabla \cdot \mathbf{u} = 0
 $$
 
-where \( \mathbf{u} \) is the velocity field, \( p \) is pressure, \( \nu \) is kinematic viscosity, and \( \mathbf{f} \) represents external forces. To solve these equations, a **fractional-step method** is used with the **Adams-Bashforth (AB2) scheme for advection** and **Crank-Nicolson (CN) scheme for diffusion**.
+where $ \mathbf{u} $ is the velocity field, $ p $ is pressure, $ \nu $ is kinematic viscosity, and $ \mathbf{f} $ represents external forces. To solve these equations, a **fractional-step method** is used with the **Adams-Bashforth (AB2) scheme for advection** and **Crank-Nicolson (CN) scheme for diffusion**.
 
 The final discretized iNS equations, formulated by **Perot**, ensure second-order accuracy in time and are expressed as:
 
@@ -40,22 +40,22 @@ $$
 u^{n+1} = u^F - \Delta t R^{-1} G P^{n+1}
 $$
 
-where \( u^F \) is the fractional-step velocity, \( a^n \) is the advection term, and \( bc_L, bc_D \) are boundary condition terms. The operators are defined as:
+where $ u^F $ is the fractional-step velocity, $ a^n $ is the advection term, and $ bc_L, bc_D $ are boundary condition terms. The operators are defined as:
 
 $$
 R = I - \frac{\Delta t}{2} \nu L, \quad S = I + \frac{\Delta t}{2} \nu L, \quad R^{-1} \approx I + \frac{\Delta t}{2} \nu L
 $$
 
-where \( D, G, L \) represent the divergence, gradient, and Laplacian operators, respectively.
+where $ D, G, L $ represent the divergence, gradient, and Laplacian operators, respectively.
 
 ---
 
 ## **Grid and Domain Setup**  
-A **staggered grid** is used to discretize the domain, where velocity components \( u, v \) are stored at the **cell faces**, while **pressure is stored at the cell centers**. This approach helps prevent **checkerboard instability**, which occurs when using a regular grid for pressure and velocity storage.
+A **staggered grid** is used to discretize the domain, where velocity components $ u, v $ are stored at the **cell faces**, while **pressure is stored at the cell centers**. This approach helps prevent **checkerboard instability**, which occurs when using a regular grid for pressure and velocity storage.
 
-The computational domain is a **\( 1 \times 1 \) square** discretized into a **\( 129 \times 129 \) grid**. The boundary conditions are as follows:
-- **Top boundary:** \( u = 1 \), \( v = 0 \) (to simulate a moving lid).  
-- **Bottom, left, and right boundaries:** \( u = 0 \), \( v = 0 \) (stationary walls).  
+The computational domain is a **$ 1 \times 1 $ square** discretized into a **$ 129 \times 129 $ grid**. The boundary conditions are as follows:
+- **Top boundary:** $ u = 1 $, $ v = 0 $ (to simulate a moving lid).  
+- **Bottom, left, and right boundaries:** $ u = 0 $, $ v = 0 $ (stationary walls).  
 - **Initial conditions:** The velocity and pressure fields are initialized to zero.
 
 A schematic representation of the staggered grid is shown below:
