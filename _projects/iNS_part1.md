@@ -86,12 +86,12 @@ The **vorticity contours** reveal strong **shear forces near the top boundary** 
 Validation against **Ghia et al.’s velocity profiles** shows minor deviations at **5 time units**, particularly in steep gradient regions, but by **10 time units**, the numerical solution **fully converges** to the benchmark data, confirming solver reliability.  
 
 <p align="center">
-  <img src="https://sachdevakunal.github.io/images/LDC_re=100_t=10.png" width="50%">
-  <img src="https://sachdevakunal.github.io/images/LDS_velocityMagnitude.png" width="50%">
+  <img src="https://sachdevakunal.github.io/images/LDC_re=100_t=10.png" width="49%">
+  <img src="https://sachdevakunal.github.io/images/LDS_velocityMagnitude.png" width="48%">
 </p>
 
 <p align="center">
-  <img src="https://sachdevakunal.github.io/images/LDS_vorticity_re100.png" width="50%">
-  <img src="https://sachdevakunal.github.io/images/v_validation.png" width="50%">
+  <img src="https://sachdevakunal.github.io/images/LDS_vorticity_re100.png" width="49%">
+  <img src="https://sachdevakunal.github.io/images/v_validation.png" width="49%">
 </p>
 
