@@ -24,7 +24,7 @@ $$
 \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla) \mathbf{u} = -\frac{1}{\rho} \nabla p + \nu \nabla^2 \mathbf{u} + \mathbf{f}, \quad \nabla \cdot \mathbf{u} = 0
 $$
 
-where $ \mathbf{u} $ is the velocity field, $ p $ is pressure, $ \nu $ is kinematic viscosity, and $ \mathbf{f} $ represents external forces. To solve these equations, a **fractional-step method** is used with the **Adams-Bashforth (AB2) scheme for advection** and **Crank-Nicolson (CN) scheme for diffusion**.
+where \( \mathbf{u} \) is the velocity field, $ p $ is pressure, $ \nu $ is kinematic viscosity, and $ \mathbf{f} $ represents external forces. To solve these equations, a **fractional-step method** is used with the **Adams-Bashforth (AB2) scheme for advection** and **Crank-Nicolson (CN) scheme for diffusion**.
 
 The final discretized iNS equations, formulated by **Perot**, ensure second-order accuracy in time and are expressed as:
 
