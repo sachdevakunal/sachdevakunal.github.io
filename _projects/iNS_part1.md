@@ -59,7 +59,7 @@ The computational domain is a **$ 1 \times 1 $ square** discretized into a **$ 1
 A schematic representation of the staggered grid is shown below:
 
 <p align="center">
-  <img src="https://sachdevakunal.github.io/images/staggered_grid.png" width="50%">
+  <img src="https://sachdevakunal.github.io/images/staggered_grid_iNS.png" width="50%">
 </p>
 
 
