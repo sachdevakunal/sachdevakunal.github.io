@@ -72,4 +72,12 @@ The simulation starts with **zero initial conditions** for velocity and pressure
 2. **Pressure correction step** to enforce incompressibility.  
 3. **Velocity update step** via matrix operations.  
 
-A **small time step** is chosen to maintain numerical stability. The solver is validated against **Ghia et al.'s benchmark results** at **Re = 100**, with a **conjugate gradient solver tolerance of $10^{-10}$** to ensure accuracy in solving the linear systems.  
+A **small time step** is chosen to maintain numerical stability. The solver is validated against **Ghia et al.’s benchmark results** at **Re = 100**, with a **conjugate gradient solver tolerance of $10^{-10}$** to ensure accuracy in solving the linear systems.  
+
+---
+
+## **Results and Discussion**  
+
+The streamline plot at **Re = 100** shows a **dominant clockwise vortex** in the cavity center, with **secondary vortices** near the bottom corners due to flow separation. These patterns align exactly with **Ghia et al.’s benchmark results**, confirming solver accuracy. Similar trends appear in the **velocity magnitude contours**.  
+
+The **vorticity contours** reveal strong **shear forces near the top boundary** due to lid motion, with values
