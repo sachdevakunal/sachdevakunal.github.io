@@ -7,8 +7,6 @@ image: /assets/images/incompressible-ns.png
 link: /projects/incompressible-ns/
 ---
 
-# Development and Application of an Incompressible Navier-Stokes Solver
-
 ## **Objectives**
 1. **Develop an incompressible Navier-Stokes solver** using a fractional-step method and finite difference discretization to simulate viscous fluid flows.  
 2. **Validate the solver** by simulating lid-driven cavity flow and comparing velocity profiles with benchmark data to assess accuracy.  
