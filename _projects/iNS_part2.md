@@ -21,7 +21,9 @@ While **Dirichlet conditions** are used at the outlet, they are **not ideal for 
 
 A **small time step** is used to maintain numerical stability and accurately capture **flow dynamics around the square geometry**.  
 
-![Square Geometry Mesh](../images/square_mesh_placeholder.png)  
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/iNS_part2/square_geo.png" width="75%">
+</p>  
 
 
 ### **Solution Procedure**  
@@ -64,19 +66,19 @@ The time evolution of flow at **Re = 1500** is analyzed using **velocity magnitu
 At **t = 2**, strong **acceleration near the leading edges** of the square creates **well-defined shear layers**. The wake remains **short and symmetric**, with low-velocity regions concentrated in the center. By **t = 4**, the wake **elongates**, and **vortex shedding begins**, forming alternating **high- and low-velocity regions**. At **t = 6**, the wake reaches a **quasi-periodic state**, with a fully developed **von Kármán vortex street**, where alternating vortices interact and enhance mixing.  
 
 <p align="center">
-  <img src="/images/velocity_mag_re1500.png" width="50%">
+  <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500_t=2,4,6_velMag-copy.png" width="75%">
 </p>
 
 Streamlines further illustrate this wake development. At **t = 2**, the wake is **short and symmetric**, with **recirculation zones near the trailing edges**. By **t = 4**, the wake becomes **elongated and asymmetric**, indicating the **onset of vortex shedding**. At **t = 6**, a periodic **von Kármán vortex street** is fully formed, with distinct alternating vortices.  
 
 <p align="center">
-  <img src="/images/streamlines_re1500.png" width="50%">
+  <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500_t=2,4,6_streamlines-copy.png" width="75%">
 </p>
 
 Vorticity contours highlight **strong shear near square corners**, where **flow separation occurs**. A **logarithmic scale** is used to better visualize **high vorticity values** near the obstacle and **weaker vorticity in the wake**. At **t = 2**, the wake is mostly symmetric, but by **t = 4**, alternating vortices become more prominent, leading to a fully developed **vortex street at t = 6**. **Irregularities near the outlet** arise due to imposed **Dirichlet boundary conditions**, but the overall wake structure is accurately captured.  
 
 <p align="center">
-  <img src="/images/log_vorticity_re1500.png" width="50%">
+  <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500_t=2,4,6_logVor-copy" width="75%">
 </p>
 
 
@@ -87,13 +89,13 @@ The wake dynamics around the **square obstacle** at **t = 4** are analyzed for d
 Figure 11 compares the flow for **Re = 100, 500, and 1000**. At **Re = 100**, the flow remains **laminar and steady**, with **symmetric recirculation bubbles** forming directly downstream of the square. The **wake region is short and well-defined**, with **minimal flow separation**. At **Re = 500**, the **wake elongates**, and the **curvature of streamlines** near the square’s trailing edges increases, indicating **stronger flow separation**. By **Re = 1000**, the **onset of vortex shedding** appears, with alternating recirculation zones forming in the wake, marking the beginning of a **von Kármán vortex street**.  
 
 <p align="center">
-  <img src="/images/streamlines_re100_500_1000.png" width="50%">
+  <img src="https://sachdevakunal.github.io/images/iNS_part2/re100,500,1000_t=4_91x31.png" width="75%">
 </p>
 
 Figure 12 compares the wake structure at **Re = 1500, 2000, 5000, and 10000**. At **Re = 1500**, **vortex shedding is fully developed**, with alternating vortices becoming more pronounced. At **Re = 2000**, the **wake length increases significantly**, with stronger interactions between **shear layers and the wake**. At **Re = 5000**, the flow transitions toward **turbulence**, displaying **chaotic wake structures** and irregular vortex shedding. By **Re = 10000**, the wake is **highly turbulent**, characterized by **intense mixing and the breakdown of coherent vortex structures**. Flow separation near the square becomes substantial, and **wake dynamics dominate the overall flow behavior**.  
 
 <p align="center">
-  <img src="/images/streamlines_re1500_2000_5000_10000.png" width="50%">
+  <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500,2000,5000,10000_t=4_91x31.png" width="75%">
 </p>  
 
 These figures collectively demonstrate the **progressive transition** from **steady laminar flow** to **unsteady vortex shedding**, ultimately leading to **turbulent wake dynamics** as Re increases.  
