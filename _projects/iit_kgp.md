@@ -20,7 +20,7 @@ Fuel injection strategies include:
 This study focuses on Transverse Fuel Injection (Jet Injection in Supersonic Crossflow - JISC), analyzing shock-wave interactions, fuel-air mixing, and combustion efficiency in supersonic conditions.  
 
 <p align="center">
-  <img src="https://sachdevakunal.github.io/images/jisc_diagram.png" width="75%">
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/jisc.png" width="75%">
 </p>  
 
 
