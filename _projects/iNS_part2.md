@@ -7,90 +7,93 @@ image: /assets/images/incompressible-ns.png
 link: /projects/incompressible-ns/
 ---
 
-## **Objectives**
-1. **Develop an incompressible Navier-Stokes solver** using a fractional-step method and finite difference discretization to simulate viscous fluid flows.  
-2. **Validate the solver** by simulating lid-driven cavity flow and comparing velocity profiles with benchmark data to assess accuracy.  
-3. **Apply the solver to simulate flow over a square obstacle** at different Reynolds numbers to analyze wake formation, vortex shedding, and flow separation.  
-4. **Evaluate the solver’s performance and numerical stability** by testing different boundary conditions, time-stepping methods, and solver configurations.  
+### **Introduction and Domain Setup**  
+The incompressible Navier-Stokes solver is extended to simulate **flow over a square cylinder**. The computational domain is **\(3 \times 1\)**, discretized with a **\(301 \times 101\) grid**. The **square obstacle**, located from **\(x = 0.5\) to \(x = 0.7\), \(y = 0.4\) to \(y = 0.6\)**, is embedded within the domain.  
 
----
+**Boundary Conditions:**  
+- **Inlet (Left Boundary):** Dirichlet conditions, \( u = 1, v = 0 \) (uniform inflow).
+- **Top and Bottom Walls:** Dirichlet conditions, \( u = 1, v = 0 \) (uniform inflow)  
+- **Square Surface:** No-slip conditions, \( u = 0, v = 0 \).  
+- **Outlet (Right Boundary):** Dirichlet condition, \( u = 1, v = 0 \).  
 
-## **Governing Equations**  
-The incompressible Navier-Stokes (iNS) equations governing viscous, incompressible fluid flow are given as:  
+
+While **Dirichlet conditions** are used at the outlet, they are **not ideal for unsteady flows**. **Neumann or Convective Boundary Conditions (CBC)** are often preferred, but an attempt to implement Neumann conditions resulted in **numerical instability and solver divergence**.  
+
+A **small time step** is used to maintain numerical stability and accurately capture **flow dynamics around the square geometry**.  
+
+![Square Geometry Mesh](../images/square_mesh_placeholder.png)  
+
+
+### **Solution Procedure**  
+
+To incorporate the effect of the **square obstacle** within the computational domain, the solver first identifies the **square’s boundary locations** in both the **x- and y-directions**. Using this information, the **numerical operators** are modified to correctly account for the presence of the square.  
+
+Whenever an operator attempts to compute a value at a **cell inside the square**, the calculation is **skipped**, effectively treating the interior as a **solid region**. For boundary points near the square, the numerical treatment depends on whether the calculation involves locations adjacent to the square boundary, such as pressure nodes at cell centers, or directly on the square surface, such as velocity components at cell faces.  
+
+The **pressure gradient** is computed at **velocity locations**, which correspond to **cell faces**. At the square surface, the **pressure gradient is set to zero**, enforcing a **homogeneous Neumann boundary condition**. This ensures **no flux normal to the surface**, maintaining the **no-penetration condition at the walls**.  
+
+By carefully implementing these modifications, the solver accurately represents the **effect of the square obstacle**, ensuring that the **boundary conditions and flow physics** are properly captured in the simulation.  
+
+
+### **Characteristics of Cylinder Wake Across Reynolds Number Regimes**  
+
+The wake behavior behind a **square obstacle** changes significantly with increasing **Reynolds number (Re)**, defined as:  
 
 $$
-\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla) \mathbf{u} = -\frac{1}{\rho} \nabla p + \nu \nabla^2 \mathbf{u} + \mathbf{f}, \quad \nabla \cdot \mathbf{u} = 0
-$$
+Re = \frac{U_{\infty} D}{\nu}
+$$  
 
-where $ \mathbf{u} $ is the velocity field, $ p $ is pressure, $ \nu $ is kinematic viscosity, and $ \mathbf{f} $ represents external forces. To solve these equations, a **fractional-step method** is used with the **Adams-Bashforth (AB2) scheme for advection** and **Crank-Nicolson (CN) scheme for diffusion**.
+where \( U_{\infty} \) is the free-stream velocity, \( D \) is the cylinder width, and \( \nu \) is the kinematic viscosity.  
 
-The final discretized iNS equations, formulated by **Perot**, ensure second-order accuracy in time and are expressed as:
+For **Re < 50**, the flow remains **steady and laminar**, forming **symmetric recirculation bubbles**. At **50 < Re < 200**, **laminar vortex shedding** begins, forming a **von Kármán vortex street**, with decreasing **vortex formation length** and increasing **Strouhal number** (\( St \)).  
 
-$$
-R u^F = S u^n + \Delta t \left( \frac{3a^n - a^{n-1}}{2} \right) + \frac{\Delta t \nu}{2} \left( bc_L^{n+1} + bc_L^n \right)
-$$
+For **200 ≲ Re ≲ 260**, the wake **transitions to 3D**, further enhancing **three-dimensionality** as Re increases. At **\(10^3 < Re < 2 \times 10^5\)**, the **shear layer becomes turbulent**, reducing **vortex formation length** while **\( St \) decreases**.  
 
-$$
-D R^{-1} G P^{n+1} = \frac{D u^F}{\Delta t} + \frac{bc_D^{n+1}}{\Delta t}
-$$
+A **critical transition** occurs at **\(2 \times 10^5 < Re < 4 \times 10^5\)**, where the shear layer **approaches separation**, causing a **sudden drop in drag** and a **sharp rise in \( St \)**. At **Re > 4 × 10^5**, the **boundary layer fully transitions to turbulence**, marking the **post-critical regime**.  
 
-$$
-u^{n+1} = u^F - \Delta t R^{-1} G P^{n+1}
-$$
-
-where $ u^F $ is the fractional-step velocity, $ a^n $ is the advection term, and $ bc_L, bc_D $ are boundary condition terms. The operators are defined as:
-
-$$
-R = I - \frac{\Delta t}{2} \nu L, \quad S = I + \frac{\Delta t}{2} \nu L, \quad R^{-1} \approx I + \frac{\Delta t}{2} \nu L
-$$
-
-where $ D, G, L $ represent the divergence, gradient, and Laplacian operators, respectively.
-
----
-
-## **Grid and Domain Setup**  
-A **staggered grid** is used to discretize the domain, where velocity components $ u, v $ are stored at the **cell faces**, while **pressure is stored at the cell centers**. This approach helps prevent **checkerboard instability**, which occurs when using a regular grid for pressure and velocity storage.
-
-The computational domain is a **$ 1 \times 1 $ square** discretized into a **$ 129 \times 129 $ grid**. The boundary conditions are as follows:
-- **Top boundary:** $ u = 1 $, $ v = 0 $ (to simulate a moving lid).  
-- **Bottom, left, and right boundaries:** $ u = 0 $, $ v = 0 $ (stationary walls).  
-- **Initial conditions:** The velocity and pressure fields are initialized to zero.
-
-A schematic representation of the staggered grid is shown below:
-
-<p align="center">
-  <img src="https://sachdevakunal.github.io/images/staggered_grid_iNS.png" width="75%">
-</p>
+These transitions highlight the impact of **Re on wake structures**, affecting **fluid forces and vortex dynamics**.  
 
 
----
-
-## **Solution Procedure**  
-The solution begins with the creation of a **pointer matrix system**, which maps 2D velocity and pressure locations to a **1D index** for efficient data handling. This matrix is used to construct key operators, including **divergence, Laplacian, gradient, advection, and boundary condition vectors**.  
-
-The simulation starts with **zero initial conditions** for velocity and pressure. The **fractional-step algorithm** is executed iteratively, with each time step consisting of:  
-1. **Velocity prediction step** using a **conjugate gradient solver**.  
-2. **Pressure correction step** to enforce incompressibility.  
-3. **Velocity update step** via matrix operations.  
-
-A **small time step** is chosen to maintain numerical stability. The solver is validated against **Ghia et al.’s benchmark results** at **Re = 100**, with a **conjugate gradient solver tolerance of $10^{-10}$** to ensure accuracy in solving the linear systems.  
-
----
 
 ## **Results and Discussion**  
 
-The streamline plot at **Re = 100** shows a **dominant clockwise vortex** in the cavity center, with **secondary vortices** near the bottom corners due to flow separation. These patterns align exactly with **Ghia et al.’s benchmark results**, confirming solver accuracy. Similar trends appear in the **velocity magnitude contours**.  
+### **Part 1: Flow Evolution at Fixed Reynolds Number (Re = 1500) Over Time**  
 
-The **vorticity contours** reveal strong **shear forces near the top boundary** due to lid motion, with values ranging from **-4 to +6**. The contours and values **match exactly with Ghia et al.**, demonstrating the solver’s ability to accurately capture vorticity transport.  
+The time evolution of flow at **Re = 1500** is analyzed using **velocity magnitude, streamlines, and vorticity contours** at **t = 2, t = 4, and t = 6**.  
 
-Validation against **Ghia et al.’s velocity profiles** shows minor deviations at **5 time units**, particularly in steep gradient regions, but by **10 time units**, the numerical solution **fully converges** to the benchmark data, confirming solver reliability.  
-
-<p align="center">
-  <img src="https://sachdevakunal.github.io/images/LDC_re=100_t=10.png" width="49%">
-  <img src="https://sachdevakunal.github.io/images/LDS_velocityMagnitude.png" width="48%">
-</p>
+At **t = 2**, strong **acceleration near the leading edges** of the square creates **well-defined shear layers**. The wake remains **short and symmetric**, with low-velocity regions concentrated in the center. By **t = 4**, the wake **elongates**, and **vortex shedding begins**, forming alternating **high- and low-velocity regions**. At **t = 6**, the wake reaches a **quasi-periodic state**, with a fully developed **von Kármán vortex street**, where alternating vortices interact and enhance mixing.  
 
 <p align="center">
-  <img src="https://sachdevakunal.github.io/images/LDS_vorticity_re100.png" width="49%">
-  <img src="https://sachdevakunal.github.io/images/v_validation.png" width="49%">
+  <img src="/images/velocity_mag_re1500.png" width="50%">
 </p>
+
+Streamlines further illustrate this wake development. At **t = 2**, the wake is **short and symmetric**, with **recirculation zones near the trailing edges**. By **t = 4**, the wake becomes **elongated and asymmetric**, indicating the **onset of vortex shedding**. At **t = 6**, a periodic **von Kármán vortex street** is fully formed, with distinct alternating vortices.  
+
+<p align="center">
+  <img src="/images/streamlines_re1500.png" width="50%">
+</p>
+
+Vorticity contours highlight **strong shear near square corners**, where **flow separation occurs**. A **logarithmic scale** is used to better visualize **high vorticity values** near the obstacle and **weaker vorticity in the wake**. At **t = 2**, the wake is mostly symmetric, but by **t = 4**, alternating vortices become more prominent, leading to a fully developed **vortex street at t = 6**. **Irregularities near the outlet** arise due to imposed **Dirichlet boundary conditions**, but the overall wake structure is accurately captured.  
+
+<p align="center">
+  <img src="/images/log_vorticity_re1500.png" width="50%">
+</p>
+
+
+### **Part 2: Flow Behavior at Different Reynolds Numbers at a Fixed Time (t = 4)**  
+
+The wake dynamics around the **square obstacle** at **t = 4** are analyzed for different **Reynolds numbers (Re = 100, 500, 1000, 1500, 2000, 5000, 10000)**. Streamline plots illustrate the transition from **steady laminar flow** at low Re to **highly unsteady and turbulent wake patterns** at higher Re.  
+
+Figure 11 compares the flow for **Re = 100, 500, and 1000**. At **Re = 100**, the flow remains **laminar and steady**, with **symmetric recirculation bubbles** forming directly downstream of the square. The **wake region is short and well-defined**, with **minimal flow separation**. At **Re = 500**, the **wake elongates**, and the **curvature of streamlines** near the square’s trailing edges increases, indicating **stronger flow separation**. By **Re = 1000**, the **onset of vortex shedding** appears, with alternating recirculation zones forming in the wake, marking the beginning of a **von Kármán vortex street**.  
+
+<p align="center">
+  <img src="/images/streamlines_re100_500_1000.png" width="50%">
+</p>
+
+Figure 12 compares the wake structure at **Re = 1500, 2000, 5000, and 10000**. At **Re = 1500**, **vortex shedding is fully developed**, with alternating vortices becoming more pronounced. At **Re = 2000**, the **wake length increases significantly**, with stronger interactions between **shear layers and the wake**. At **Re = 5000**, the flow transitions toward **turbulence**, displaying **chaotic wake structures** and irregular vortex shedding. By **Re = 10000**, the wake is **highly turbulent**, characterized by **intense mixing and the breakdown of coherent vortex structures**. Flow separation near the square becomes substantial, and **wake dynamics dominate the overall flow behavior**.  
+
+<p align="center">
+  <img src="/images/streamlines_re1500_2000_5000_10000.png" width="50%">
+</p>  
+
+These figures collectively demonstrate the **progressive transition** from **steady laminar flow** to **unsteady vortex shedding**, ultimately leading to **turbulent wake dynamics** as Re increases.  
