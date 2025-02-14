@@ -66,19 +66,19 @@ The time evolution of flow at **Re = 1500** is analyzed using **velocity magnitu
 At **t = 2**, strong **acceleration near the leading edges** of the square creates **well-defined shear layers**. The wake remains **short and symmetric**, with low-velocity regions concentrated in the center. By **t = 4**, the wake **elongates**, and **vortex shedding begins**, forming alternating **high- and low-velocity regions**. At **t = 6**, the wake reaches a **quasi-periodic state**, with a fully developed **von Kármán vortex street**, where alternating vortices interact and enhance mixing.  
 
 <p align="center">
-  <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500_t=2,4,6_velMag-copy.png" width="75%">
+  <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500_t=2,4,6_velMag-copy.PNG" width="75%">
 </p>
 
 Streamlines further illustrate this wake development. At **t = 2**, the wake is **short and symmetric**, with **recirculation zones near the trailing edges**. By **t = 4**, the wake becomes **elongated and asymmetric**, indicating the **onset of vortex shedding**. At **t = 6**, a periodic **von Kármán vortex street** is fully formed, with distinct alternating vortices.  
 
 <p align="center">
-  <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500_t=2,4,6_streamlines-copy.png" width="75%">
+  <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500_t=2,4,6_streamlines-copy.PNG" width="75%">
 </p>
 
 Vorticity contours highlight **strong shear near square corners**, where **flow separation occurs**. A **logarithmic scale** is used to better visualize **high vorticity values** near the obstacle and **weaker vorticity in the wake**. At **t = 2**, the wake is mostly symmetric, but by **t = 4**, alternating vortices become more prominent, leading to a fully developed **vortex street at t = 6**. **Irregularities near the outlet** arise due to imposed **Dirichlet boundary conditions**, but the overall wake structure is accurately captured.  
 
 <p align="center">
-  <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500_t=2,4,6_logVor-copy" width="75%">
+  <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500_t=2,4,6_logVor-copy.PNG" width="75%">
 </p>
 
 
