@@ -37,3 +37,33 @@ The penetration height of the jet depends on the jet-to-freestream momentum flux
 </p>
 
 
+
+
+## **Computational Setup: Geometry, Mesh, Boundary Conditions, and Solver Settings**  
+
+The computational domain consists of a **supersonic crossflow over a jet injector**, as shown in the figure. The **mesh is a nonuniform structured grid** created using **Pointwise**, with finer resolution near the fuel inlet to accurately capture the interaction between the jet and the supersonic crossflow. Additionally, this fine grid resolution is maintained **70 mm upstream** of the fuel inlet to correctly resolve **boundary layer separation** and ensure accurate shock capturing.  
+
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/jisc/geometry.png" width="75%">
+</p>
+
+The **incoming supersonic flow** has a **Mach number of 3.75**, a **static pressure of 11090 Pa**, and consists of **air (O₂ = 20.9%, N₂ = 79.1%)**. The **fuel jet** is injected **perpendicularly into the crossflow** at **Mach 1**, with a **static pressure of 196514.8 Pa**, and consists of **pure nitrogen (N₂ = 100%)**. The **pressure ratio of the jet to the freestream is 17.72**, significantly influencing the jet penetration height and shock strength.  
+
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/jisc/mesh.png" width="75%">
+</p>
+
+The **boundary conditions** applied to the computational domain are:  
+- **Top boundary:** Symmetry plane (to simulate an infinitely wide flow)  
+- **Bottom boundary:** No-slip wall (to account for wall shear effects)  
+- **Inlet:** Supersonic inflow (prescribed flow properties from freestream conditions)  
+- **Outlet:** Supersonic pressure outlet (allowing shock interactions to propagate without reflection)  
+
+For the **solver setup**, a **steady-state** simulation is performed using the **k-omega SST turbulence model** under **non-reacting flow conditions**. The key convergence criteria include:  
+- **Residuals must drop below \(10^{-6}\)**  
+- **Mass flow rate imbalance must be less than 0.05%** of the inlet mass flow rate  
+
+This setup ensures accurate resolution of **shock interactions, boundary layer separation, and jet penetration dynamics**. The **jet penetration height** is a crucial parameter in the analysis, as it influences **fuel-air mixing efficiency** in realistic scramjet applications. By analyzing the interaction between the jet and the supersonic crossflow at different pressure ratios, valuable insights can be gained into **optimal injection strategies for efficient supersonic combustion**.  
+
+
+
