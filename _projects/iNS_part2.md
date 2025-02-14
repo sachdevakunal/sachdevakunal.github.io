@@ -12,7 +12,7 @@ The incompressible Navier-Stokes solver is extended to simulate flow over a squa
 
 **Boundary Conditions:**  
 - **Inlet (Left Boundary):** Dirichlet conditions, $$ u = 1, v = 0 $$ (uniform inflow).  
-- **Top and Bottom Walls:** Dirichlet conditions, $$ u = 1, v = 0 $$ (uniform inflow).  
+- **Top and Bottom Boundary:** Dirichlet conditions, $$ u = 1, v = 0 $$ (uniform inflow).  
 - **Square Surface:** No-slip conditions, $$ u = 0, v = 0 $$.  
 - **Outlet (Right Boundary):** Dirichlet condition, $$ u = 1, v = 0 $$.  
 
