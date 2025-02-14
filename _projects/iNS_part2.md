@@ -78,12 +78,18 @@ Vorticity contours highlight strong shear near square corners, where flow separa
 
 ### **Part 2: Flow Behavior at Different Reynolds Numbers at a Fixed Time (t = 4)**  
 
-The wake dynamics around the square obstacle at $$ t = 4 $$ are analyzed for different Reynolds numbers ($$ Re = 100, 500, 1000, 1500, 2000, 5000, 10000 $$).  
+The wake dynamics around the square obstacle at $$ t = 4 $$ are analyzed for different Reynolds numbers ($$ Re = 100, 500, 1000, 1500, 2000, 5000, 10000 $$). Streamline plots illustrate the transition from steady laminar flow at low $$ Re $$ to highly unsteady and turbulent wake patterns at higher $$ Re $$.  
+
+Figure 11 compares the flow for $$ Re = 100, 500, $$ and $$ 1000 $$. At $$ Re = 100 $$, the flow remains laminar and steady, with symmetric recirculation bubbles forming directly downstream of the square. The wake region is short and well-defined, with minimal flow separation. At $$ Re = 500 $$, the wake elongates, and the curvature of streamlines near the square’s trailing edges increases, indicating stronger flow separation. By $$ Re = 1000 $$, the onset of vortex shedding appears, with alternating recirculation zones forming in the wake, marking the beginning of a von Kármán vortex street.  
 
 <p align="center">
   <img src="https://sachdevakunal.github.io/images/iNS_part2/re100,500,1000_t=4_91x31.png" width="75%">
 </p>
 
+Figure 12 compares the wake structure at $$ Re = 1500, 2000, 5000, $$ and $$ 10000 $$. At $$ Re = 1500 $$, vortex shedding is fully developed, with alternating vortices becoming more pronounced. At $$ Re = 2000 $$, the wake length increases significantly, with stronger interactions between shear layers and the wake. At $$ Re = 5000 $$, the flow transitions toward turbulence, displaying chaotic wake structures and irregular vortex shedding. By $$ Re = 10000 $$, the wake is highly turbulent, characterized by intense mixing and the breakdown of coherent vortex structures. Flow separation near the square becomes substantial, and wake dynamics dominate the overall flow behavior.  
+
 <p align="center">
   <img src="https://sachdevakunal.github.io/images/iNS_part2/re1500,2000,5000,10000_t=4_91x31.png" width="75%">
 </p>  
+
+These figures collectively demonstrate the progressive transition from steady laminar flow to unsteady vortex shedding, ultimately leading to turbulent wake dynamics as $$ Re $$ increases.  
