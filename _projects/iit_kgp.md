@@ -62,4 +62,15 @@ A steady-state simulation is performed using the k-omega SST turbulence model un
 This setup ensures accurate resolution of shock interactions, boundary layer separation, and jet penetration dynamics. The jet penetration height is a crucial parameter in the analysis, as it influences fuel-air mixing efficiency in realistic scramjet applications. By analyzing the interaction between the jet and the supersonic crossflow at different pressure ratios, valuable insights can be gained into optimal injection strategies for efficient supersonic combustion. 
 
 
+## Numerical Validation  
+
+Wall pressure distributions are validated against **experimental data** ([Link](https://arc.aiaa.org/doi/10.2514/6.1991-16)) and **CFD results of Sriram et al.** ([Link](https://arc.aiaa.org/doi/10.2514/1.17114)). The wall pressure is non-dimensionalized using the freestream static pressure ($$11090$$ Pa), and the x-coordinate is normalized by the distance from the supersonic inlet to the fuel injector centerline ($$330$$ mm).  
+
+The separation point is where the pressure starts increasing due to boundary layer separation. Further downstream, pressure rises due to Primary Upstream Vortices (PUV) and spikes from Secondary Upstream Vortices (SUV). A sharp pressure drop occurs just after the jet, followed by fluctuations due to Primary and Secondary Downstream Vortices (PDV and SDV) and boundary layer reattachment.  
+
+The separation length is slightly under-predicted but remains close to experimental results. Upstream of the jet, wall pressure matches CFD results, while downstream, it closely follows experimental data. This confirms that the solver accurately captures boundary layer separation, jet penetration, and vortex structures.  
+
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/Numerical_Validation.png" width="75%">
+</p>
 
