@@ -74,3 +74,26 @@ The separation length is slightly under-predicted but remains close to experimen
   <img src="https://sachdevakunal.github.io/images/iit_kgp/Numerical_Validation.png" width="75%">
 </p>
 
+## Results and Discussion  
+
+The figure below presents the Mach number contours and a zoomed-in view of streamlines near the fuel injection point. Four distinct recirculation zones are visible—two upstream and two downstream of the fuel injector. The upstream recirculation zones are critical as they provide a region where the fuel mixes with the incoming air subsonically, aiding flameholding in combustion applications.  
+
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/Mach_recirculation.png" width="75%">
+</p>
+
+The following figure illustrates fuel penetration in the supersonic crossflow using mass fraction contours of nitrogen. The zoomed-in streamlines reveal the distribution of the injected fuel. At the freestream inlet, the nitrogen mass fraction is 0.78, consistent with the boundary conditions. The injected fuel remains concentrated near the wall, leading to poor mixing with the air.  
+
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/N2_injection.png" width="75%">
+</p>
+
+The final figure displays the stagnation pressure loss across the computational domain. The stagnation pressure is non-dimensionalized using the incoming air stagnation pressure (1199957.95 Pa) and subtracted from 1, so higher values indicate greater losses. As expected, maximum stagnation pressure losses occur near the fuel injection region, where the bow shock forms. The shock-induced irreversibilities contribute to pressure losses, impacting combustor efficiency.  
+
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/TotalP_Loss.png" width="75%">
+</p>
+
+
+
+
