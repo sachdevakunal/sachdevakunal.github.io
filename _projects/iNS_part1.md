@@ -3,7 +3,7 @@ title: "Development and Validation of an Incompressible Navier-Stokes Solver –
 date: 2024-02-12
 excerpt: "Building a solver to simulate flow over a square geometry using the Incompressible Navier-Stokes equations."
 description: "Implemented a CFD solver for incompressible flows and validated results for flow over a square obstacle."
-image: /assets/images/incompressible-ns.png
+image: /images/biophoto.jpg
 link: /projects/incompressible-ns/
 ---
 
