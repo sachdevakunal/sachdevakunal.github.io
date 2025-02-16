@@ -66,5 +66,4 @@ Teaching
 
 Achievements
 ======
-Secured an All-India Rank of \textbf{86 out of 4726 candidates} in GATE (Graduate Aptitude Test in Engineering) in Aerospace Engineering 2022. The GATE exam is a countrywide examination for students applying for masters Secured an All-India Rank of **86 out of 4726 candidates** in GATE (Graduate Aptitude Test in Engineering) in Aerospace Engineering 2022. The GATE exam is a countrywide examination for students applying for master's programs in Science and Engineering in India.
-
+Secured an All-India Rank of **86 out of 4726 candidates** in GATE (Graduate Aptitude Test in Engineering) in Aerospace Engineering 2022. The GATE exam is a countrywide examination for students applying for master's programs in Science and Engineering in India.
