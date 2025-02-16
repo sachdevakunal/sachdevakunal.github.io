@@ -10,8 +10,8 @@ classes: wide
 
 Here are some of my research and engineering projects:
 
-{% for project in site.projects %}
+{% assign sorted_projects = site.projects | sort: "order" %}
+{% for project in sorted_projects %}
 - **[{{ project.title }}]({{ project.url }})**  
-  📅 **Published:** {{ project.date | date: "%B %d, %Y" }}  
-  {{ project.description }}
+  🛠 **Tools Used:** {{ project.tools }}
 {% endfor %}
