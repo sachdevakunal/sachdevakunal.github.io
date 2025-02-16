@@ -99,13 +99,13 @@ The final figure displays the stagnation pressure loss across the computational 
 The figure below shows the Mach number contours, highlighting the sonic line and separation shock. The sonic line marks the boundary between subsonic and supersonic regions, while the separation shock forms due to boundary layer detachment caused by jet obstruction.  
 
 <p align="center">  
-  <img src="https://sachdevakunal.github.io/images/iit_kgp/sonic_line_contour.png" width="75%">  
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/sonic_line_angle.png" width="75%">  
 </p>  
 
 An interesting observation is that the sonic line and the region below resemble a wedge in supersonic flow, with the separation shock behaving like an oblique shock. The figure below visually compares this fluidic wedge to a geometric wedge-induced oblique shock. The θ-β-M relation is used to verify that the separation shock angle matches the oblique shock angle.  
 
 <p align="center">  
-  <img src="https://sachdevakunal.github.io/images/iit_kgp/fluidic_pylon.png" width="75%">  
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/flow_wedge.png" width="75%">  
 </p>  
 
 This discovery suggests that the fluidic pylon, formed naturally due to jet interaction, behaves similarly to geometric pylons used in combustors. Further investigations focus on how its properties can be controlled to enhance fuel-air mixing efficiency.  
@@ -121,7 +121,7 @@ The properties of the fluidic pylon were analyzed by varying both the pressure r
 These results confirm that while pressure ratio influences jet penetration and separation, the Mach number directly affects the shock system geometry.  
 
 <p align="center">  
-  <img src="https://sachdevakunal.github.io/images/iit_kgp/table_5_9.png" width="75%">  
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/table1.png" width="75%">  
 </p>  
 
 This analysis highlights how pressure ratio and Mach number collectively define the shape and strength of the fluidic pylon, with potential applications in optimizing fuel-air mixing in supersonic combustion systems.  
@@ -131,7 +131,7 @@ This analysis highlights how pressure ratio and Mach number collectively define 
 Additional simulations explored changes in fuel density and velocity, while keeping the momentum flux ratio constant. Findings confirm that sonic line angle remains unchanged, while the separation shock follows the θ-β-M relation.  
 
 <p align="center">  
-  <img src="https://sachdevakunal.github.io/images/iit_kgp/table_5_10.png" width="75%">  
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/table2.png" width="75%">  
 </p>  
 
 ### Summary of Findings  
