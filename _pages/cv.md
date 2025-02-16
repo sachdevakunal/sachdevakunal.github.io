@@ -11,8 +11,8 @@ redirect_from:
 
 Education 
 ======
-* M.S. in Mechanical Engineering, GNorth Carolina State University, 2025
-* B.S. in Aerospace Engineering, Punjab Engineering College (Deemed to be University), 2012
+* M.S. in Mechanical Engineering, North Carolina State University, 2025
+* B.S. in Aerospace Engineering, Punjab Engineering College (Deemed to be University), 2023
 
 Work experience
 ======
