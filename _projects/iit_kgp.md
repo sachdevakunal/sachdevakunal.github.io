@@ -94,6 +94,55 @@ The final figure displays the stagnation pressure loss across the computational 
   <img src="https://sachdevakunal.github.io/images/iit_kgp/TotalP_Loss.png" width="75%">
 </p>
 
+### Analysis of the Sonic Line and Separation Shock  
+
+The figure below shows the Mach number contours, highlighting the sonic line and separation shock. The sonic line marks the boundary between subsonic and supersonic regions, while the separation shock forms due to boundary layer detachment caused by jet obstruction.  
+
+<p align="center">  
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/sonic_line_contour.png" width="75%">  
+</p>  
+
+An interesting observation is that the sonic line and the region below resemble a wedge in supersonic flow, with the separation shock behaving like an oblique shock. The figure below visually compares this fluidic wedge to a geometric wedge-induced oblique shock. The θ-β-M relation is used to verify that the separation shock angle matches the oblique shock angle.  
+
+<p align="center">  
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/fluidic_pylon.png" width="75%">  
+</p>  
+
+This discovery suggests that the fluidic pylon, formed naturally due to jet interaction, behaves similarly to geometric pylons used in combustors. Further investigations focus on how its properties can be controlled to enhance fuel-air mixing efficiency.  
+
+### Effect of Pressure Ratio and Incoming Mach Number on the Fluidic Pylon  
+
+The properties of the fluidic pylon were analyzed by varying both the pressure ratio (jet-to-freestream) and the incoming Mach number while observing changes in the sonic line angle and separation shock behavior.  
+
+- Increasing the pressure ratio leads to higher jet penetration and a longer separation length, effectively increasing the base and height of the fluidic pylon. However, the sonic line angle remains unchanged, meaning the fundamental flow structure remains stable despite increased jet obstruction.  
+
+- Increasing the incoming Mach number at a constant pressure ratio causes a decrease in the sonic line angle, leading to a lower separation shock angle. This follows the expected trend from compressible flow shock relations, where a higher Mach number results in weaker shock angles.  
+
+These results confirm that while pressure ratio influences jet penetration and separation, the Mach number directly affects the shock system geometry.  
+
+<p align="center">  
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/table_5_9.png" width="75%">  
+</p>  
+
+This analysis highlights how pressure ratio and Mach number collectively define the shape and strength of the fluidic pylon, with potential applications in optimizing fuel-air mixing in supersonic combustion systems.  
+
+### Effect of Fuel Density and Velocity  
+
+Additional simulations explored changes in fuel density and velocity, while keeping the momentum flux ratio constant. Findings confirm that sonic line angle remains unchanged, while the separation shock follows the θ-β-M relation.  
+
+<p align="center">  
+  <img src="https://sachdevakunal.github.io/images/iit_kgp/table_5_10.png" width="75%">  
+</p>  
+
+### Summary of Findings  
+
+- Sonic line angle remains constant with increasing pressure ratio, while penetration height and separation length increase.  
+- Sonic line angle decreases with increasing freestream Mach number, reducing the separation shock angle.  
+- Fuel density and velocity changes do not alter the sonic line angle, and the separation shock continues to follow compressible flow relations.  
+
+This analysis highlights the role of the fluidic pylon in influencing shock structures and fuel-air mixing efficiency, paving the way for further optimization in supersonic combustion applications.  
+
+
 
 
 
