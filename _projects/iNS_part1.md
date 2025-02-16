@@ -1,9 +1,7 @@
 ---
 title: "Development and Validation of an Incompressible Navier-Stokes Solver – Part 1"
-date: 2024-02-12
-excerpt: "Building a solver to simulate flow over a square geometry using the Incompressible Navier-Stokes equations."
-description: "Implemented a CFD solver for incompressible flows and validated results for flow over a square obstacle."
-image: /images/biophoto.jpg
+order: 1
+tools: "MATLAB, High-Performance Computing (HPC)"
 link: /projects/incompressible-ns/
 ---
 
