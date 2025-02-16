@@ -9,56 +9,53 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+Education 
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Mechanical Engineering, GNorth Carolina State University, 2025
+* B.S. in Aerospace Engineering, Punjab Engineering College (Deemed to be University), 2012
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+### Research Assistant – Computational Combustion & Energy Sciences Lab, NC State  
+May 2024 - Present  
+- Conducting MS thesis research using PeleLMeX, a high-fidelity reactive CFD solver, for large-scale HPC simulations.  
+- Integrated a Deep Operator Network to accelerate reaction integration, reducing computational time by 50 percent while maintaining 93 percent accuracy.  
+- Leveraged embedded boundary geometry for accurate simulations in complex domains.  
+- Developed operator splitting strategies for efficient transport-reaction coupling.  
+- Analyzed simulation outputs using ParaView and MATLAB to study flow dynamics and combustion processes.  
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+### Research Assistant – Hasti Research Lab, NC State  
+Jan 2024 - May 2024  
+- Simulated electrowetting dynamics using ANSYS Fluent’s volume of fluid-continuum surface force method.  
+- Developed a user-defined function in C to model dynamic contact angles under electric fields.  
+- Achieved 95 percent accuracy in droplet behavior predictions compared to experimental results.  
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+### Research Intern – IIT Kharagpur, India  
+Feb 2022 - Jul 2022  
+- Investigated scramjet propulsion, focusing on transverse fuel injection in supersonic turbulent crossflow.  
+- Conducted CFD simulations using ANSYS Fluent and validated results against experimental data.  
+- Analyzed sonic line angles, separation shock behavior, and jet penetration height for different injection parameters.  
+
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- **Programming:** MATLAB, Python, LabVIEW, C/C++, Fortran  
+- **CAD & CFD/Thermal Analysis:**  
+  - SolidWorks, CATIA V5, ANSYS SpaceClaim, AutoCAD  
+  - ANSYS Fluent, ANSYS Workbench, ANSYS Icepak  
+  - Pointwise, Tecplot, ParaView, Chemkin-Pro, Cantera  
+- **High-Performance Computing (HPC):** Linux, Parallel Computing  
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+
   
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+- Graduate Teaching Assistant, NC State University  
+  - Assisted over 50 graduate students in Foundations of Fluid Dynamics through doubt sessions, homework guidance, and grading.  
+  - Provided detailed feedback to enhance conceptual understanding of numerical methods, turbulence modeling, and governing equations.  
+  - Evaluated assignments for Aerospace Vehicle Performance, Flight Stability and Control, and Engineering Thermodynamics courses.  
+
+
+Achievements
 ======
-* Currently signed in to 43 different slack teams
+Secured an All-India Rank of \textbf{86 out of 4726 candidates} in GATE (Graduate Aptitude Test in Engineering) in Aerospace Engineering 2022. The GATE exam is a countrywide examination for students applying for masters programs in Science and Engineering in India.
