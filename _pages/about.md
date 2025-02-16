@@ -8,9 +8,9 @@ author_profile: true
 
 My name is **Kunal Sachdeva**, and I am a **Master’s student in Mechanical Engineering at North Carolina State University**, graduating in **May 2025**. My specialization lies in **Computational Fluid Dynamics (CFD) and Thermal Analysis**, where I have developed a deep understanding of **fluid dynamics, heat transfer, and high-performance computing (HPC)**.
 
-With expertise in **reactive CFD codes, numerical methods, and AI-driven modeling techniques**, I work on integrating advanced **machine learning models with high-fidelity CFD simulations** to enhance computational efficiency while maintaining accuracy.
+I am **proficient in MATLAB, Python, and C/C++ programming** and skilled in **advanced simulation tools**. My experience includes developing **numerical solvers**, performing **high-fidelity CFD simulations**, and analyzing **complex engineering systems** using **computational methods**. I am adept at **solving challenging engineering problems, optimizing numerical models**, and applying **theoretical knowledge to practical applications** in **thermal simulations, turbulence modeling, and reactive flows**. My approach combines **deep physical understanding with computational efficiency**, ensuring accurate and high-performance solutions for real-world engineering challenges.
 
-I am passionate about **problem-solving, algorithm development, and leveraging advanced computing techniques** to push the boundaries of simulation-driven engineering.
+I am passionate about **problem-solving, algorithm development, and leveraging advanced computing techniques** to push the boundaries of **simulation-driven engineering**.
 
 ## Let's Connect!
 Feel free to reach out to discuss **CFD, AI-driven modeling, or thermal management solutions**.
