@@ -1,9 +1,7 @@
 ---
 title: "Numerical Study of Transverse Fuel Injection in Supersonic Turbulent Crossflow and Sonic Line Angle Analysis"
-date: 2024-02-12
-excerpt: "Investigation of transverse fuel injection in supersonic turbulent crossflow and its impact on shock structures and mixing."
-description: "Analysis of transverse fuel injection (JISC) in scramjet combustors, focusing on shock interactions, fuel-air mixing, and sonic line behavior."
-image: /assets/images/supersonic-injection.png
+order: 3
+tools: "ANSYS Fluent, Pointwise, Tecplot, MATLAB, High-Performance Computing (HPC)"
 link: /projects/supersonic-injection/
 ---
 
