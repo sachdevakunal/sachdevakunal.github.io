@@ -1,9 +1,7 @@
 ---
 title: "Extending the Incompressible Solver for Flow Over a Square Geometry – Part 2"
-date: 2024-02-12
-excerpt: "Building a solver to simulate flow over a square geometry using the Incompressible Navier-Stokes equations."
-description: "Implemented a CFD solver for incompressible flows and validated results for flow over a square obstacle."
-image: /assets/images/incompressible-ns.png
+order: 2
+tools: "ANSYS Fluent, MATLAB, High-Performance Computing (HPC)"
 link: /projects/incompressible-ns/
 ---
 
