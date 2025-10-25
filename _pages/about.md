@@ -6,15 +6,13 @@ author_profile: true
 
 # Welcome to Kunal's Portfolio
 
-My name is Kunal Sachdeva, and I am a Master’s student in Mechanical Engineering at North Carolina State University, graduating in May 2025. My specialization lies in Computational Fluid Dynamics (CFD) and Thermal Analysis, where I have developed a deep understanding of fluid dynamics, heat transfer, and high-performance computing (HPC).  
+My name is Kunal Sachdeva, and I am a Ph.D. student in Mechanical Engineering at Mississippi State University, specializing in multiphase flows and heat transfer. I completed my Master’s in Aerospace Engineering from North Carolina State University (NCSU) in May 2025, where I developed a strong foundation in Computational Fluid Dynamics (CFD), combustion simulations, data-driven modeling for reactive flow simulations, and high-performance computing (HPC).
 
-I am proficient in MATLAB, Python, and C/C++ programming and skilled in advanced simulation tools. My experience includes developing numerical solvers, performing high-fidelity CFD simulations, and analyzing complex engineering systems using computational methods. I am adept at solving challenging engineering problems, optimizing numerical models, and applying theoretical knowledge to practical applications in thermal simulations, turbulence modeling, and reactive flows. My approach combines deep physical understanding with computational efficiency, ensuring accurate and high-performance solutions for real-world engineering challenges.  
+My research and professional interests center on numerical modeling, high-fidelity CFD simulations, and the analysis of complex thermal-fluid systems using advanced computational methods. I am proficient in MATLAB, Python, and C/C++, and skilled in developing efficient numerical solvers, optimizing simulation workflows, and translating theoretical concepts into practical, simulation-driven engineering solutions. My work combines deep physical understanding with computational rigor to advance modeling capabilities in thermal systems, turbulence, and multiphase interactions.
 
-I am passionate about problem-solving, algorithm development, and leveraging advanced computing techniques to push the boundaries of simulation-driven engineering.  
-
-I am actively seeking **full-time opportunities** starting in **May 2025** in roles such as **CFD Engineer, Thermal Engineer, and related positions** where I can apply my expertise in computational modeling, fluid dynamics, and heat transfer to solve challenging engineering problems.
+I am currently seeking a Summer 2026 internship in the areas of CFD, thermal engineering, multiphase flow simulation, or computational methods, where I can apply my expertise to solve challenging problems and contribute to innovation in fluid-thermal systems.
 
 ## Let's Connect!
 Feel free to reach out to discuss CFD, AI-driven modeling, or thermal management solutions.  
 
-📧 Email: ksachde4@ncsu.edu
+📧 Email: kunalsachdeva261@gmail.com 
