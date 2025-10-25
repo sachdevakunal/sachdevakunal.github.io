@@ -70,7 +70,7 @@ The simulation starts with zero initial conditions for velocity and pressure. Th
 2. Pressure correction step to enforce incompressibility.  
 3. Velocity update step via matrix operations.  
 
-A small time step is chosen to maintain numerical stability. The solver is validated against Ghia et al.’s benchmark results ([Link]([https://arc.aiaa.org/doi/10.2514/6.1991-16](https://www.sciencedirect.com/science/article/abs/pii/0021999182900584))) at $$ Re = 100 $$, with a conjugate gradient solver tolerance of $$10^{-10}$$ to ensure accuracy in solving the linear systems.  
+A small time step is chosen to maintain numerical stability. The solver is validated against Ghia et al.’s benchmark results ([Link](https://www.sciencedirect.com/science/article/abs/pii/0021999182900584)) at $$ Re = 100 $$, with a conjugate gradient solver tolerance of $$10^{-10}$$ to ensure accuracy in solving the linear systems.  
 
 ---
 
