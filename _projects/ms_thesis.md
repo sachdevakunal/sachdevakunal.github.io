@@ -23,4 +23,7 @@ link: /projects/ms-thesis/
 - Each cell evolves independently, enabling parallel execution but resulting in **high cumulative computational overhead**.  
 - This motivates the development of a **faster surrogate** capable of predicting the **temporal evolution of thermochemical states** directly, without iterative ODE integration.  
 
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/op_split.png" width="75%">
+</p>  
 
