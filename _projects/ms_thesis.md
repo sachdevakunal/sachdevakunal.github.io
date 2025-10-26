@@ -5,7 +5,7 @@ tools: "Python (JAX, NumPy), MATLAB, Cantera, PeleLMeX, High-Performance Computi
 link: /projects/ms-thesis/
 ---
 
-### Objective of This Work
+## Objective of This Work
 
 - **Reactive flow simulations** are limited by the high computational cost of chemistry integration.  
 - Developed a **machine learning–based surrogate framework** to accelerate this step in **PeleLMeX**, an open-source, high-fidelity CFD solver for reactive flows.  
@@ -13,7 +13,7 @@ link: /projects/ms-thesis/
 - Established a **C–Python interface** enabling seamless integration of the trained model with PeleLMeX.  
 - Validated the framework on a **2D reacting flow case**, demonstrating strong accuracy and significant computational savings.  
 
-### Background: Reaction Integration in PeleLMeX
+## Background: Reaction Integration in PeleLMeX
 
 - PeleLMeX is an open-source, high-fidelity CFD solver for low-Mach reactive flow simulations, built on the AMReX framework.  
 - The solver employs an operator-splitting approach, separating transport (advection + diffusion) from reaction during each time advance.  
