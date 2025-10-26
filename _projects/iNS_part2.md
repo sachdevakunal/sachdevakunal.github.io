@@ -1,6 +1,6 @@
 ---
 title: "Extending the Incompressible Solver for Flow Over a Square Geometry – Part 2"
-order: 2
+order: 3
 tools: "MATLAB, High-Performance Computing (HPC)"
 link: /projects/incompressible-ns/
 ---
