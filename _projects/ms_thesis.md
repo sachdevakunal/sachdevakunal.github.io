@@ -138,3 +138,13 @@ link: /projects/ms-thesis/
     Figure: Temperature and CH4 mass fraction—CVODE, React-DeepONet, and absolute error at t = 2.75 ms.
   </figcaption>
 </figure>
+
+## Conclusion
+
+- A DeepONet-based surrogate was developed to accelerate chemistry integration in reactive CFD while maintaining physical accuracy.  
+- The pretrained DeepONet and RecNet models were successfully integrated into PeleLMeX through a Python–C++ interface.  
+- The surrogate accurately predicted representative species and temperature, with the RecNet restoring the full thermochemical state.  
+- Validation on a backward-facing step methane–air flame showed strong agreement with the CVODE-based baseline across all time snapshots.  
+- Using the DRM19 mechanism, the framework achieved an overall ~11% reduction in simulation runtime by lowering chemistry integration cost.  
+- Larger speedups are expected when applying the method to more complex fuel mechanisms and larger domains.  
+
