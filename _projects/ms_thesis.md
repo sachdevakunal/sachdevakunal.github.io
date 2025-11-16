@@ -73,6 +73,6 @@ link: /projects/ms-thesis/
 - The DeepONet and RecNet models were built in JAX and trained on an NVIDIA RTX A6000 GPU using a two-stage process: pre-training followed by refined auto-regressive training.  
 - Pre-training minimized short-step prediction error for physical consistency, while refined training increased rollout length by feeding the model’s own predictions back as inputs.
 
-- <p align="center">
+<p align="center">
   <img src="https://sachdevakunal.github.io/images/ms_thesis/training_workflow.png" width="75%">
 </p> 
