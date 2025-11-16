@@ -27,3 +27,12 @@ link: /projects/ms-thesis/
   <img src="https://sachdevakunal.github.io/images/ms_thesis/op_split.png" width="75%">
 </p>  
 
+## Deep Operator Network (DeepONets) Framework
+
+- Deep Operator Networks (DeepONets) are neural architectures that learn mappings between functions, making them suitable for modeling complex dynamical systems.  
+- Instead of predicting fixed scalar outputs, DeepONets learn the temporal evolution of entire thermochemical states over time.  
+- The architecture consists of two subnetworks: the Branch Net, which processes the thermochemical input state, and the Trunk Net, which takes the time increment as input.  
+- The outputs of both networks are combined through a dot product to predict the future thermochemical state.  
+- This approach allows DeepONets to generalize across a wide range of initial conditions and reaction timescales.  
+- In this work, DeepONets were trained to predict representative quantities such as temperature and key species mass fractions, effectively replacing traditional numerical integration of stiff ODEs.  
+
