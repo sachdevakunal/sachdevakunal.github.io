@@ -48,4 +48,18 @@ link: /projects/ms-thesis/
 - The DeepONet predicts only the representative scalars, keeping the model size and complexity manageable.  
 - A separate neural network called reconstruction network (RecNet) maps the representative scalars back to the remaining species, enabling full thermochemical state recovery without increasing DeepONet complexity.  
  
+## Integration into PeleLMeX
 
+- The pretrained DeepONet model was coupled with the PeleLMeX solver through a custom C–Python interface implemented using Python.h and the NumPy C API.  
+- During the reaction step of the operator-splitting loop, each cell's thermochemical state is flattened and passed to the DeepONet for inference.  
+- The DeepONet predicts the updated representative scalars for the specified time increment, replacing the conventional stiff ODE integration.  
+- The predicted outputs are mapped back to the full thermochemical state using the reconstruction network (RecNet).  
+- The updated species and temperature fields are then returned to the solver and used to advance transport and subsequent chemistry evaluations.  
+
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/deeponet_integration_workflow.png" width="75%">
+</p> 
+
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/Operator_splitting_schematic.png" width="75%">
+</p> 
