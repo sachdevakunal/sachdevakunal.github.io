@@ -85,12 +85,56 @@ link: /projects/ms-thesis/
 
 <figure style="text-align: center;">
   <img src="https://sachdevakunal.github.io/images/ms_thesis/t050.png" width="75%">
-  <figcaption>Figure: Temperature and CH4 mass fraction: CVODE, React-DeepONet, and absolute error at t = 0.5 ms.</figcaption>
+  <figcaption style="font-size: 16px; margin-top: 6px; text-align: center;">
+    Figure: Temperature and CH4 mass fraction—CVODE, React-DeepONet, and absolute error at t = 0.50 ms.
+  </figcaption>
 </figure>
 
 <figure style="text-align: center;">
-  <img src="https://sachdevakunal.github.io/images/ms_thesis/t050.png" width="75%">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/t100.png" width="75%">
   <figcaption style="font-size: 16px; margin-top: 6px; text-align: center;">
-    Figure: Temperature and CH4 mass fraction: CVODE, React-DeepONet, and absolute error at t = 0.5 ms.
+    Figure: Temperature and CH4 mass fraction—CVODE, React-DeepONet, and absolute error at t = 1.00 ms.
+  </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/t150.png" width="75%">
+  <figcaption style="font-size: 16px; margin-top: 6px; text-align: center;">
+    Figure: Temperature and CH4 mass fraction—CVODE, React-DeepONet, and absolute error at t = 1.50 ms.
+  </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/t175.png" width="75%">
+  <figcaption style="font-size: 16px; margin-top: 6px; text-align: center;">
+    Figure: Temperature and CH4 mass fraction—CVODE, React-DeepONet, and absolute error at t = 1.75 ms.
+  </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/t200.png" width="75%">
+  <figcaption style="font-size: 16px; margin-top: 6px; text-align: center;">
+    Figure: Temperature and CH4 mass fraction—CVODE, React-DeepONet, and absolute error at t = 2.00 ms.
+  </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/t225.png" width="75%">
+  <figcaption style="font-size: 16px; margin-top: 6px; text-align: center;">
+    Figure: Temperature and CH4 mass fraction—CVODE, React-DeepONet, and absolute error at t = 2.25 ms.
+  </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/t250.png" width="75%">
+  <figcaption style="font-size: 16px; margin-top: 6px; text-align: center;">
+    Figure: Temperature and CH4 mass fraction—CVODE, React-DeepONet, and absolute error at t = 2.50 ms.
+  </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/t275.png" width="75%">
+  <figcaption style="font-size: 16px; margin-top: 6px; text-align: center;">
+    Figure: Temperature and CH4 mass fraction—CVODE, React-DeepONet, and absolute error at t = 2.75 ms.
   </figcaption>
 </figure>
