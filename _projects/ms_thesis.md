@@ -36,3 +36,6 @@ link: /projects/ms-thesis/
 - This approach allows DeepONets to generalize across a wide range of initial conditions and reaction timescales.  
 - In this work, DeepONets were trained to predict representative quantities such as temperature and key species mass fractions, effectively replacing traditional numerical integration of stiff ODEs.  
 
+<p align="center">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/deeponet_architecture.png" width="75%">
+</p> 
