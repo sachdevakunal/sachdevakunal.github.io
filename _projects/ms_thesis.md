@@ -39,3 +39,13 @@ link: /projects/ms-thesis/
 <p align="center">
   <img src="https://sachdevakunal.github.io/images/ms_thesis/deeponet_architecture.png" width="75%">
 </p> 
+
+## Data Preparation and Reduction
+
+- Detailed mechanisms contain many species, so a reduced set of representative scalars (key species and temperature) was selected to lower computational cost.  
+- Representative species were chosen based on their influence on thermal and chemical dynamics, retaining only those that contribute most to system variability.  
+- This reduction enables faster network training and inference while still capturing the essential evolution of temperature and major species.  
+- The DeepONet predicts only the representative scalars, keeping the model size and complexity manageable.  
+- A separate neural network called reconstruction network (RecNet) maps the representative scalars back to the remaining species, enabling full thermochemical state recovery without increasing DeepONet complexity.  
+ 
+
