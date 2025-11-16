@@ -76,3 +76,15 @@ link: /projects/ms-thesis/
 <p align="center">
   <img src="https://sachdevakunal.github.io/images/ms_thesis/training_workflow.png" width="75%">
 </p> 
+
+## Results
+
+- The DeepONet-based surrogate was integrated into PeleLMeX and tested on the 2D backward-facing step flame up to 3 ms using a refined AMR grid.  
+- Predicted temperature and key species fields closely matched the solver’s native chemistry integration, with low absolute error across all time snapshots.  
+- Error contours confirmed that the surrogate preserved major flame structures while significantly reducing the overall cost of the reaction step.  
+
+<figure style="text-align: center;">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/ch4_0.5.png" width="75%">
+  <figcaption>Figure: CH4 at 0.5 seconds of flow-time.</figcaption>
+</figure>
+
