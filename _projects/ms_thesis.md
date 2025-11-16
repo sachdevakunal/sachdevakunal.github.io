@@ -84,12 +84,12 @@ link: /projects/ms-thesis/
 - Error contours confirmed that the surrogate preserved major flame structures while significantly reducing the overall cost of the reaction step.  
 
 <figure style="text-align: center;">
-  <img src="https://sachdevakunal.github.io/images/ms_thesis/t0.5.png" width="75%">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/t050.png" width="75%">
   <figcaption>Figure: Temperature and CH4 mass fraction: CVODE, React-DeepONet, and absolute error at t = 0.5 ms.</figcaption>
 </figure>
 
 <figure style="text-align: center;">
-  <img src="https://sachdevakunal.github.io/images/ms_thesis/t0.5.png" width="75%">
+  <img src="https://sachdevakunal.github.io/images/ms_thesis/t050.png" width="75%">
   <figcaption style="font-size: 16px; margin-top: 6px; text-align: center;">
     Figure: Temperature and CH4 mass fraction: CVODE, React-DeepONet, and absolute error at t = 0.5 ms.
   </figcaption>
