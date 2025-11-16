@@ -63,3 +63,12 @@ link: /projects/ms-thesis/
 <p align="center">
   <img src="https://sachdevakunal.github.io/images/ms_thesis/Operator_splitting_schematic.png" width="75%">
 </p> 
+
+## Training
+
+- The training data was generated using a 2D backward-facing step methane-air flame simulated with the DRM19 mechanism, providing diverse reacting-flow conditions.
+- A coarse-grid simulation was used to collect temporal snapshots of temperature and species fields, from which representative species were selected based on a cutoff mass-fraction threshold.
+- PCA was applied to the sampled snapshots to select diverse thermochemical states for training while reducing redundancy in the dataset.  
+- Each sampled state was evolved through 0D constant-pressure reactors in Cantera to obtain time-series data for temperature and species evolution.  
+- The DeepONet and RecNet models were built in JAX and trained on an NVIDIA RTX A6000 GPU using a two-stage process: pre-training followed by refined auto-regressive training.  
+- Pre-training minimized short-step prediction error for physical consistency, while refined training increased rollout length by feeding the model’s own predictions back as inputs.
