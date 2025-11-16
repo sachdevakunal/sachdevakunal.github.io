@@ -148,3 +148,6 @@ link: /projects/ms-thesis/
 - Using the DRM19 mechanism, the framework achieved an overall ~11% reduction in simulation runtime by lowering chemistry integration cost.  
 - Larger speedups are expected when applying the method to more complex fuel mechanisms and larger domains.  
 
+For more details on the methodology, integration workflow, and full set of results, please refer to the complete thesis document:  
+[View Full MS Thesis](https://www.proquest.com/docview/3264176680?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses)
+
